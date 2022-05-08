@@ -24,6 +24,7 @@
               <th>PhoneNumber</th>
               <th>Gender</th>
               <th>RoledId</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -36,6 +37,10 @@
                      <td><%= dataTable[i].phonenumber %></td>
                      <td><%= dataTable[i].gender %></td>
                      <td><%= dataTable[i].roledId %></td>
+                     <td>
+                         <a href="/edit-crud?id=<%= dataTable[i].id %>" class="link-primary">Edit</a>
+                         <a href="#" class="link-danger">Delete</a>
+                     </td>
                    </tr>
                 <% } %>
           </tbody>
