@@ -39,7 +39,7 @@
                      <td><%= dataTable[i].roledId %></td>
                      <td>
                          <a href="/edit-crud?id=<%= dataTable[i].id %>" class="link-primary">Edit</a>
-                         <a href="#" class="link-danger">Delete</a>
+                         <a href="/delete-crud?id=<%= dataTable[i].id %>" class="link-primary">Delete</a>
                      </td>
                    </tr>
                 <% } %>
